@@ -1,0 +1,155 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    HashMap
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Examples
+  </th>
+  <td>
+   <div class="example">
+    <pre>
+import java.util.Map;
+
+// Note the HashMap's "key" is a String and "value" is an Integer
+HashMap&lt;String,Integer&gt; hm = new HashMap&lt;String,Integer&gt;();
+
+// Putting key-value pairs in the HashMap
+hm.put("Ava", 1);
+hm.put("Cait", 35);
+hm.put("Casey", 36);
+
+// Using an enhanced loop to interate over each entry
+for (Map.Entry me : hm.entrySet()) {
+  print(me.getKey() + " is ");
+  println(me.getValue());
+}
+
+// We can also access values by their key
+int val = hm.get("Casey");
+println("Casey is " + val);
+
+</pre>
+   </div>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Description
+  </th>
+  <td>
+   A
+   <b>
+    HashMap
+   </b>
+   stores a collection of objects, each referenced by a key. This is similar to an
+   <b>
+    Array
+   </b>
+   , only instead of accessing elements with a numeric index, a
+   <b>
+    String
+   </b>
+   is used. (If you are familiar with associative arrays from other languages, this is the same idea.) The above example covers basic use, but there's a more extensive example included with the Processing examples.  In addition, for simple pairings of Strings and integers, Strings and floats, or Strings and Strings, you can now use the simpler IntDict, FloatDict, and StringDict classes.
+   <br/>
+   <br/>
+   For a list of the numerous
+   <b>
+    HashMap
+   </b>
+   features, please read the
+   <a href="http://download.oracle.com/javase/6/docs/api/java/util/HashMap.html">
+    Java reference description
+   </a>
+   .
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Constructor
+  </th>
+  <td>
+   <pre>
+HashMap&lt;Key, Value&gt;()
+HashMap&lt;Key, Value&gt;(initialCapacity)
+HashMap&lt;Key, Value&gt;(initialCapacity, loadFactor)
+HashMap&lt;Key, Value&gt;(m)
+</pre>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Parameters
+  </th>
+  <td>
+   <table border="0" cellpadding="0" cellspacing="0">
+    <tr class="">
+     <th class="code" scope="row">
+      Key
+     </th>
+     <td>
+      Class Name: the data type for the HashMap's keys
+     </td>
+    </tr>
+    <tr class="">
+     <th class="code" scope="row">
+      Value
+     </th>
+     <td>
+      Class Name: the data type for the HashMap's values
+     </td>
+    </tr>
+    <tr class="">
+     <th class="code" scope="row">
+      initialCapacity
+     </th>
+     <td>
+      int: defines the initial capacity of the map; the default is 16
+     </td>
+    </tr>
+    <tr class="">
+     <th class="code" scope="row">
+      loadFactor
+     </th>
+     <td>
+      float: the load factor for the map; the default is 0.75
+     </td>
+    </tr>
+    <tr class="">
+     <th class="code" scope="row">
+      m
+     </th>
+     <td>
+      Map: gives the new HashMap the same mappings as this Map
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Related
+  </th>
+  <td>
+   <a class="code" href="IntDict.html">
+    IntDict
+   </a>
+   <br/>
+   <a class="code" href="FloatDict.html">
+    FloatDict
+   </a>
+   <br/>
+   <a class="code" href="StringDict.html">
+    StringDict
+   </a>
+   <br/>
+  </td>
+ </tr>
+</table>

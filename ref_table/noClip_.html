@@ -1,0 +1,68 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    noClip()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <pre>
+void setup() {
+  size(200, 200);
+  imageMode(CENTER);
+}
+
+void draw() {
+  background(204);
+  if (mousePressed) {
+    clip(mouseX, mouseY, 100, 100);
+  } else {
+    noClip();
+  }
+  line(0, 0, width, height);
+  line(0, height, width, 0);
+}
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Disables the clipping previously started by the
+    <b>
+     clip()
+    </b>
+    function.
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>noClip()</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+ </tr>
+</table>

@@ -1,0 +1,125 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    loadJSONObject()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <pre>
+// The following short JSON file called "data.json" is parsed 
+// in the code below. It must be in the project's "data" folder.
+//
+// {
+//   "id": 0,
+//   "species": "Panthera leo",
+//   "name": "Lion"
+// }
+
+JSONObject json;
+
+void setup() {
+
+  json = loadJSONObject("data.json");
+
+  int id = json.getInt("id");
+  String species = json.getString("species");
+  String name = json.getString("name");
+
+  println(id + ", " + species + ", " + name);
+}
+
+// Sketch prints:
+// 0, Panthera leo, Lion
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Loads a JSON from the data folder or a URL, and returns a
+    <b>
+     JSONObject
+    </b>
+    .
+    <br/>
+    <br/>
+    All files loaded and saved by the Processing API use UTF-8 encoding.
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>loadJSONObject(filename)
+loadJSONObject(file)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       filename
+      </th>
+      <td>
+       String: name of a file in the data folder or a URL
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    JSONObject
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="JSONObject.html">
+     JSONObject
+    </a>
+    <br/>
+    <a class="code" href="JSONArray.html">
+     JSONArray
+    </a>
+    <br/>
+    <a class="code" href="loadJSONArray_.html">
+     loadJSONArray()
+    </a>
+    <br/>
+    <a class="code" href="saveJSONObject_.html">
+     saveJSONObject()
+    </a>
+    <br/>
+    <a class="code" href="saveJSONArray_.html">
+     saveJSONArray()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

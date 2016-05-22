@@ -1,0 +1,168 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    imageMode()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <img alt="example pic" src="images/imageMode_0.png"/>
+     <pre class="margin">
+PImage img;
+
+void setup() {
+  img = loadImage("laDefense.jpg");
+}
+
+void draw() {
+  imageMode(CORNER);
+  image(img, 10, 10, 50, 50);  // Draw image using CORNER mode
+}
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/imageMode_1.png"/>
+     <pre class="margin">
+PImage img;
+
+void setup() {
+  img = loadImage("laDefense.jpg");
+}
+
+void draw() {
+  imageMode(CORNERS);
+  image(img, 10, 10, 90, 40);  // Draw image using CORNERS mode
+}
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/imageMode_2.png"/>
+     <pre class="margin">
+PImage img;
+
+void setup() {
+  img = loadImage("laDefense.jpg");
+}
+
+void draw() {
+  imageMode(CENTER);
+  image(img, 50, 50, 80, 80);  // Draw image using CENTER mode
+}
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Modifies the location from which images are drawn by changing the way in which parameters given to
+    <b>
+     image()
+    </b>
+    are intepreted.
+    <br/>
+    <br/>
+    The default mode is
+    <b>
+     imageMode(CORNER)
+    </b>
+    , which interprets the second and third parameters of
+    <b>
+     image()
+    </b>
+    as the upper-left corner of the image. If two additional parameters are specified, they are used to set the image's width and height.
+    <br/>
+    <br/>
+    <b>
+     imageMode(CORNERS)
+    </b>
+    interprets the second and third parameters of
+    <b>
+     image()
+    </b>
+    as the  location of one corner, and the fourth and fifth parameters as the opposite corner.
+    <br/>
+    <br/>
+    <b>
+     imageMode(CENTER)
+    </b>
+    interprets the second and third parameters of
+    <b>
+     image()
+    </b>
+    as the image's center point. If two additional parameters are specified, they are used to set the image's width and height.
+    <br/>
+    <br/>
+    The parameter must be written in ALL CAPS because Processing is a case-sensitive language.
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>imageMode(mode)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       mode
+      </th>
+      <td>
+       int: either CORNER, CORNERS, or CENTER
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="loadImage_.html">
+     loadImage()
+    </a>
+    <br/>
+    <a class="code" href="PImage.html">
+     PImage
+    </a>
+    <br/>
+    <a class="code" href="image_.html">
+     image()
+    </a>
+    <br/>
+    <a class="code" href="background_.html">
+     background()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

@@ -1,0 +1,171 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    rect()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <img alt="example pic" src="images/rect_0.png"/>
+     <pre class="margin">
+rect(30, 20, 55, 55);
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/rect_1.png"/>
+     <pre class="margin">
+rect(30, 20, 55, 55, 7);
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/rect_2.png"/>
+     <pre class="margin">
+rect(30, 20, 55, 55, 3, 6, 12, 18);
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Draws a rectangle to the screen. A rectangle is a four-sided shape with every angle at ninety degrees. By default, the first two parameters set the location of the upper-left corner, the third sets the width, and the fourth sets the height. The way these parameters are interpreted, however, may be changed with the
+    <b>
+     rectMode()
+    </b>
+    function.
+    <br/>
+    <br/>
+    To draw a rounded rectangle, add a fifth parameter, which is used as the radius value for all four corners.
+    <br/>
+    <br/>
+    To use a different radius value for each corner, include eight parameters. When using eight parameters, the latter four set the radius of the arc at each corner separately, starting with the top-left corner and moving clockwise around the rectangle.
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>rect(a, b, c, d)
+rect(a, b, c, d, r)
+rect(a, b, c, d, tl, tr, br, bl)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       a
+      </th>
+      <td>
+       float: x-coordinate of the rectangle by default
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       b
+      </th>
+      <td>
+       float: y-coordinate of the rectangle by default
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       c
+      </th>
+      <td>
+       float: width of the rectangle by default
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       d
+      </th>
+      <td>
+       float: height of the rectangle by default
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       r
+      </th>
+      <td>
+       float: radii for all four corners
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       tl
+      </th>
+      <td>
+       float: radius for top-left corner
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       tr
+      </th>
+      <td>
+       float: radius for top-right corner
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       br
+      </th>
+      <td>
+       float: radius for bottom-right corner
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       bl
+      </th>
+      <td>
+       float: radius for bottom-left corner
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="rectMode_.html">
+     rectMode()
+    </a>
+    <br/>
+    <a class="code" href="quad_.html">
+     quad()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

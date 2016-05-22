@@ -1,0 +1,195 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    scale()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <img alt="example pic" src="images/scale_0.png"/>
+     <pre class="margin">
+rect(30, 20, 50, 50);
+scale(0.5);
+rect(30, 20, 50, 50);
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/scale_1.png"/>
+     <pre class="margin">
+rect(30, 20, 50, 50);
+scale(0.5, 1.3);
+rect(30, 20, 50, 50);
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/scale_2.png"/>
+     <pre class="margin">
+// Scaling in 3D requires P3D 
+// as a parameter to size()
+size(100, 100, P3D);
+noFill();
+translate(width/2+12, height/2);
+box(20, 20, 20);
+scale(2.5, 2.5, 2.5);
+box(20, 20, 20);
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Increases or decreases the size of a shape by expanding and contracting vertices. Objects always scale from their relative origin to the coordinate system. Scale values are specified as decimal percentages. For example, the function call
+    <b>
+     scale(2.0)
+    </b>
+    increases the dimension of a shape by 200%.
+    <br/>
+    <br/>
+    Transformations apply to everything that happens after and subsequent calls to the function multiply the effect. For example, calling
+    <b>
+     scale(2.0)
+    </b>
+    and then
+    <b>
+     scale(1.5)
+    </b>
+    is the same as
+    <b>
+     scale(3.0)
+    </b>
+    . If
+    <b>
+     scale()
+    </b>
+    is called within
+    <b>
+     draw()
+    </b>
+    , the transformation is reset when the loop begins again. Using this fuction with the
+    <b>
+     z
+    </b>
+    parameter requires using P3D as a parameter for
+    <b>
+     size()
+    </b>
+    , as shown in the third example above. This function can be further controlled with
+    <b>
+     pushMatrix()
+    </b>
+    and
+    <b>
+     popMatrix()
+    </b>
+    .
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>scale(s)
+scale(x, y)
+scale(x, y, z)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       s
+      </th>
+      <td>
+       float: percentage to scale the object
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       x
+      </th>
+      <td>
+       float: percentage to scale the object in the x-axis
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       y
+      </th>
+      <td>
+       float: percentage to scale the object in the y-axis
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       z
+      </th>
+      <td>
+       float: percentage to scale the object in the z-axis
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="pushMatrix_.html">
+     pushMatrix()
+    </a>
+    <br/>
+    <a class="code" href="popMatrix_.html">
+     popMatrix()
+    </a>
+    <br/>
+    <a class="code" href="translate_.html">
+     translate()
+    </a>
+    <br/>
+    <a class="code" href="rotate_.html">
+     rotate()
+    </a>
+    <br/>
+    <a class="code" href="rotateX_.html">
+     rotateX()
+    </a>
+    <br/>
+    <a class="code" href="rotateY_.html">
+     rotateY()
+    </a>
+    <br/>
+    <a class="code" href="rotateZ_.html">
+     rotateZ()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

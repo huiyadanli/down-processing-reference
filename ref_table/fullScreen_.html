@@ -1,0 +1,208 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    fullScreen()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <pre>
+// Run the code at the full dimensions of the screen currently
+// selected inside the Preferences window
+
+int x = 0;
+
+void setup() {
+  fullScreen();
+  background(0);
+  noStroke();
+  fill(102);
+}
+
+void draw() {
+  rect(x, height*0.2, 1, height*0.6); 
+  x = x + 2;
+}
+</pre>
+    </div>
+    <hr class="noshade" noshade="noshade" size="1">
+     <div class="example">
+      <pre>
+// If more than one screen is attached to the computer, run the 
+// code at the full dimensions on the screen defined by the 
+// parameter to fullScreen()
+
+int x = 0;
+
+void setup() {
+  fullScreen(2);
+  background(0);
+  noStroke();
+  fill(102);
+}
+
+void draw() {
+  rect(x, height*0.2, 1, height*0.6); 
+  x = x + 2;
+}
+</pre>
+     </div>
+     <hr class="noshade" noshade="noshade" size="1">
+      <div class="example">
+       <pre>
+// Run full screen using the P2D renderer on screen 2
+
+int x = 0;
+
+void setup() {
+  fullScreen(P2D, 2);
+  background(0);
+  noStroke();
+  fill(102);
+}
+
+void draw() {
+  rect(x, height*0.2, 1, height*0.6); 
+  x = x + 2;
+}
+</pre>
+      </div>
+      <hr class="noshade" noshade="noshade" size="1">
+       <div class="example">
+        <pre>
+// If more than one screen is attached to the computer, run the 
+// code at the full dimensions across all of the attached screens
+
+int x = 0;
+
+void setup() {
+  fullScreen(P2D, SPAN);
+  background(0);
+  noStroke();
+  fill(102);
+}
+
+void draw() {
+  rect(x, height*0.2, 1, height*0.6); 
+  x = x + 2;
+}
+</pre>
+       </div>
+      </hr>
+     </hr>
+    </hr>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    This function is new for Processing 3.0. It opens a sketch using the full size of the computer's display. This function must be the first line in
+    <b>
+     setup()
+    </b>
+    . The
+    <b>
+     size()
+    </b>
+    and
+    <b>
+     fullScreen()
+    </b>
+    functions cannot both be used in the same program, just choose one.
+    <br/>
+    <br/>
+    When
+    <b>
+     fullScreen()
+    </b>
+    is used without a parameter, it draws the sketch to the screen currently selected inside the Preferences window. When it is used with a single parameter, this number defines the screen to display to program on (e.g. 1, 2, 3...). When used with two parameters, the first defines the renderer to use (e.g. P2D) and the second defines the screen. The
+    <b>
+     SPAN
+    </b>
+    parameter can be used in place of a screen number to draw the sketch as a full-screen window across all of the attached displays if there are more than one.
+    <br/>
+    <br/>
+    Prior to Processing 3.0, a full-screen program was defined with
+    <b>
+     size(displayWidth, displayHeight)
+    </b>
+    .
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>fullScreen()
+fullScreen(display)
+fullScreen(renderer)
+fullScreen(renderer, display)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       renderer
+      </th>
+      <td>
+       String: the renderer to use, e.g. P2D, P3D, JAVA2D (default)
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       display
+      </th>
+      <td>
+       int: the screen to run the sketch on (1, 2, 3, etc. or on multiple screens using SPAN)
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="settings_.html">
+     settings()
+    </a>
+    <br/>
+    <a class="code" href="setup_.html">
+     setup()
+    </a>
+    <br/>
+    <a class="code" href="smooth_.html">
+     smooth()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

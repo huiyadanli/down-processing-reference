@@ -1,0 +1,197 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    background()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <img alt="example pic" src="images/background_0.png"/>
+     <pre class="margin">
+background(51);
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/background_1.png"/>
+     <pre class="margin">
+background(255, 204, 0);
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/background_2.png"/>
+     <pre class="margin">
+PImage img;
+img = loadImage("laDefense.jpg");
+background(img);
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    The
+    <b>
+     background()
+    </b>
+    function sets the color used for the background of the Processing window. The default background is light gray. This function is typically used within
+    <b>
+     draw()
+    </b>
+    to clear the display window at the beginning of each frame, but it can be used inside
+    <b>
+     setup()
+    </b>
+    to set the background on the first frame of animation or if the backgound need only be set once.
+    <br/>
+    <br/>
+    An image can also be used as the background for a sketch, although the image's width and height must match that of the sketch window. Images used with
+    <b>
+     background()
+    </b>
+    will ignore the current
+    <b>
+     tint()
+    </b>
+    setting. To resize an image to the size of the sketch window, use image.resize(width, height).
+    <br/>
+    <br/>
+    It is not possible to use the transparency
+    <b>
+     alpha
+    </b>
+    parameter with background colors on the main drawing surface. It can only be used along with a
+    <b>
+     PGraphics
+    </b>
+    object and
+    <b>
+     createGraphics()
+    </b>
+    .
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>background(rgb)
+background(rgb, alpha)
+background(gray)
+background(gray, alpha)
+background(v1, v2, v3)
+background(v1, v2, v3, alpha)
+background(image)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       rgb
+      </th>
+      <td>
+       int: any value of the color datatype
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       alpha
+      </th>
+      <td>
+       float: opacity of the background
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       gray
+      </th>
+      <td>
+       float: specifies a value between white and black
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       v1
+      </th>
+      <td>
+       float: red or hue value (depending on the current color mode)
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       v2
+      </th>
+      <td>
+       float: green or saturation value (depending on the current color mode)
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       v3
+      </th>
+      <td>
+       float: blue or brightness value (depending on the current color mode)
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       image
+      </th>
+      <td>
+       PImage: PImage to set as background (must be same size as the sketch window)
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="stroke_.html">
+     stroke()
+    </a>
+    <br/>
+    <a class="code" href="fill_.html">
+     fill()
+    </a>
+    <br/>
+    <a class="code" href="tint_.html">
+     tint()
+    </a>
+    <br/>
+    <a class="code" href="colorMode_.html">
+     colorMode()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

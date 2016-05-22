@@ -1,0 +1,401 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    PShape
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Examples
+  </th>
+  <td>
+   <div class="example">
+    <pre>
+PShape s;
+
+void setup() {
+  size(100, 100);
+  // The file "bot.svg" must be in the data folder
+  // of the current sketch to load successfully
+  s = loadShape("bot.svg");
+}
+
+void draw() {
+  shape(s, 10, 10, 80, 80);
+}
+</pre>
+   </div>
+   <hr class="noshade" noshade="noshade" size="1">
+    <div class="example">
+     <pre>
+PShape square;  // The PShape object
+
+void setup() {  
+  size(100, 100);
+  // Creating the PShape as a square. The corner 
+  // is 0,0 so that the center is at 40,40 
+  square = createShape(RECT, 0, 0, 80, 80);
+}
+
+void draw() {
+  shape(square, 10, 10);
+}
+</pre>
+    </div>
+   </hr>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Description
+  </th>
+  <td>
+   Datatype for storing shapes. Before a shape is used, it must be loaded with the
+   <b>
+    loadShape()
+   </b>
+   or created with the
+   <b>
+    createShape()
+   </b>
+   . The
+   <b>
+    shape()
+   </b>
+   function is used to draw the shape to the display window. Processing can currently load and display SVG (Scalable Vector Graphics) and OBJ shapes. OBJ files can only be opened using the
+   <b>
+    P3D
+   </b>
+   renderer. The
+   <b>
+    loadShape()
+   </b>
+   function supports SVG files created with Inkscape and Adobe Illustrator. It is not a full SVG implementation, but offers some straightforward support for handling vector data.
+   <br/>
+   <br/>
+   The
+   <b>
+    PShape
+   </b>
+   object contains a group of methods that can operate on the shape data. Some of the methods are listed below, but the full list used for creating and modifying shapes is
+   <a href="http://processing.github.io/processing-javadocs/core/">
+    available here in the Processing Javadoc
+   </a>
+   .
+   <br/>
+   <br/>
+   To create a new shape, use the
+   <b>
+    createShape()
+   </b>
+   function. Do not use the syntax
+   <b>
+    new PShape()
+   </b>
+   .
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   <b>
+    Fields
+   </b>
+  </th>
+  <td>
+   <table border="0" cellpadding="0" cellspacing="0">
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_width.html">
+       width
+      </a>
+     </th>
+     <td>
+      Shape document width
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_height.html">
+       height
+      </a>
+     </th>
+     <td>
+      Shape document height
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Methods
+  </th>
+  <td>
+   <table border="0" cellpadding="0" cellspacing="0">
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_isVisible_.html">
+       isVisible()
+      </a>
+     </th>
+     <td>
+      Returns a boolean value "true" if the image is set to be visible, "false" if not
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_setVisible_.html">
+       setVisible()
+      </a>
+     </th>
+     <td>
+      Sets the shape to be visible or invisible
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_disableStyle_.html">
+       disableStyle()
+      </a>
+     </th>
+     <td>
+      Disables the shape's style data and uses Processing styles
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_enableStyle_.html">
+       enableStyle()
+      </a>
+     </th>
+     <td>
+      Enables the shape's style data and ignores the Processing styles
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_beginContour_.html">
+       beginContour()
+      </a>
+     </th>
+     <td>
+      Starts a new contour
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_endContour_.html">
+       endContour()
+      </a>
+     </th>
+     <td>
+      Ends a contour
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_beginShape_.html">
+       beginShape()
+      </a>
+     </th>
+     <td>
+      Starts the creation of a new PShape
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_endShape_.html">
+       endShape()
+      </a>
+     </th>
+     <td>
+      Finishes the creation of a new PShape
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_getChildCount_.html">
+       getChildCount()
+      </a>
+     </th>
+     <td>
+      Returns the number of children
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_getChild_.html">
+       getChild()
+      </a>
+     </th>
+     <td>
+      Returns a child element of a shape as a PShape object
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_addChild_.html">
+       addChild()
+      </a>
+     </th>
+     <td>
+      Adds a new child
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_getVertexCount_.html">
+       getVertexCount()
+      </a>
+     </th>
+     <td>
+      Returns the total number of vertices as an int
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_getVertex_.html">
+       getVertex()
+      </a>
+     </th>
+     <td>
+      Returns the vertex at the index position
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_setVertex_.html">
+       setVertex()
+      </a>
+     </th>
+     <td>
+      Sets the vertex at the index position
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_setFill_.html">
+       setFill()
+      </a>
+     </th>
+     <td>
+      Set the fill value
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_setStroke_.html">
+       setStroke()
+      </a>
+     </th>
+     <td>
+      Set the stroke value
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_translate_.html">
+       translate()
+      </a>
+     </th>
+     <td>
+      Displaces the shape
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_rotateX_.html">
+       rotateX()
+      </a>
+     </th>
+     <td>
+      Rotates the shape around the x-axis
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_rotateY_.html">
+       rotateY()
+      </a>
+     </th>
+     <td>
+      Rotates the shape around the y-axis
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_rotateZ_.html">
+       rotateZ()
+      </a>
+     </th>
+     <td>
+      Rotates the shape around the z-axis
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_rotate_.html">
+       rotate()
+      </a>
+     </th>
+     <td>
+      Rotates the shape
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_scale_.html">
+       scale()
+      </a>
+     </th>
+     <td>
+      Increases and decreases the size of a shape
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="PShape_resetMatrix_.html">
+       resetMatrix()
+      </a>
+     </th>
+     <td>
+      Replaces the current matrix of a shape with the identity matrix
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Constructor
+  </th>
+  <td>
+   <pre>PShape(g, kind, params)
+</pre>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Related
+  </th>
+  <td>
+   <a class="code" href="loadShape_.html">
+    loadShape()
+   </a>
+   <br/>
+   <a class="code" href="createShape_.html">
+    createShape()
+   </a>
+   <br/>
+   <a class="code" href="shapeMode_.html">
+    shapeMode()
+   </a>
+   <br/>
+  </td>
+ </tr>
+</table>

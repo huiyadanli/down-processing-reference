@@ -1,0 +1,140 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    createImage()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <img alt="example pic" src="images/createImage_0.png"/>
+     <pre class="margin">
+PImage img = createImage(66, 66, RGB);
+img.loadPixels();
+for (int i = 0; i &lt; img.pixels.length; i++) {
+  img.pixels[i] = color(0, 90, 102); 
+}
+img.updatePixels();
+image(img, 17, 17);
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/createImage_1.png"/>
+     <pre class="margin">
+PImage img = createImage(66, 66, ARGB);
+img.loadPixels();
+for (int i = 0; i &lt; img.pixels.length; i++) {
+  img.pixels[i] = color(0, 90, 102, i % img.width * 2); 
+}
+img.updatePixels();
+image(img, 17, 17);
+image(img, 34, 34);
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Creates a new PImage (the datatype for storing images). This provides a fresh buffer of pixels to play with. Set the size of the buffer with the
+    <b>
+     width
+    </b>
+    and
+    <b>
+     height
+    </b>
+    parameters. The
+    <b>
+     format
+    </b>
+    parameter defines how the pixels are stored. See the PImage reference for more information.
+    <br/>
+    <br/>
+    Be sure to include all three parameters, specifying only the width and height (but no format) will produce a strange error.
+    <br/>
+    <br/>
+    Advanced users please note that createImage() should be used instead of the syntax
+    <tt>
+     new PImage()
+    </tt>
+    .
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>createImage(w, h, format)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       w
+      </th>
+      <td>
+       int: width in pixels
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       h
+      </th>
+      <td>
+       int: height in pixels
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       format
+      </th>
+      <td>
+       int: Either RGB, ARGB, ALPHA (grayscale alpha channel)
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    PImage
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="PImage.html">
+     PImage
+    </a>
+    <br/>
+    <a class="code" href="PGraphics.html">
+     PGraphics
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

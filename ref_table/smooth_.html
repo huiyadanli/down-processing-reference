@@ -1,0 +1,171 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    smooth()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <pre>
+void setup() {
+  size(100, 100);
+  smooth(2);
+  noStroke();
+}
+
+void draw() {
+  background(0);
+  ellipse(30, 48, 36, 36);
+  ellipse(70, 48, 36, 36);
+}
+</pre>
+    </div>
+    <hr class="noshade" noshade="noshade" size="1">
+     <div class="example">
+      <pre>
+void setup() {
+  fullScreen(P2D, SPAN);
+  smooth(4);
+}
+
+void draw() {
+  background(0);
+  ellipse(x, height/2, height/4, height/4);
+  x += 1;
+}
+</pre>
+     </div>
+    </hr>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Draws all geometry with smooth (anti-aliased) edges. This behavior is the default, so
+    <b>
+     smooth()
+    </b>
+    only needs to be used when a program needs to set the smoothing in a different way. The
+    <b>
+     level
+    </b>
+    parameter increases the level of smoothness. This is the level of over sampling applied to the graphics buffer.
+    <br/>
+    <br/>
+    With the P2D and P3D renderers,
+    <b>
+     smooth(2)
+    </b>
+    is the default, this is called "2x anti-aliasing." The code
+    <b>
+     smooth(4)
+    </b>
+    is used for 4x anti-aliasing and
+    <b>
+     smooth(8)
+    </b>
+    is specified for 8x anti-aliasing. The maximum anti-aliasing level is determined by the hardware of the machine that is running the software, so
+    <b>
+     smooth(4)
+    </b>
+    and
+    <b>
+     smooth(8)
+    </b>
+    will not work with every computer.
+    <br>
+     <br/>
+     The default renderer uses
+     <b>
+      smooth(3)
+     </b>
+     by default. This is bicubic smoothing. The other option for the default renderer is
+     <b>
+      smooth(2)
+     </b>
+     , which is bilinear smoothing.
+     <br/>
+     <br/>
+     With Processing 3.0,
+     <b>
+      smooth()
+     </b>
+     is different than before. It was common to use
+     <b>
+      smooth()
+     </b>
+     and
+     <b>
+      noSmooth()
+     </b>
+     to turn on and off antialiasing within a sketch. Now, because of how the software has changed,
+     <b>
+      smooth()
+     </b>
+     can only be set once within a sketch. It can be used either at the top of a sketch without a
+     <b>
+      setup()
+     </b>
+     , or after the
+     <b>
+      size()
+     </b>
+     function when used in a sketch with
+     <b>
+      setup()
+     </b>
+     . The
+     <b>
+      noSmooth()
+     </b>
+     function also follows the same rules.
+    </br>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>smooth(level)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       level
+      </th>
+      <td>
+       int: either 2, 3, 4, or 8 depending on the renderer
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+ </tr>
+</table>

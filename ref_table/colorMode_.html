@@ -1,0 +1,238 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    colorMode()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <img alt="example pic" src="images/colorMode_0.png"/>
+     <pre class="margin">
+noStroke();
+colorMode(RGB, 100);
+for (int i = 0; i &lt; 100; i++) {
+  for (int j = 0; j &lt; 100; j++) {
+    stroke(i, j, 0);
+    point(i, j);
+  }
+}
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/colorMode_1.png"/>
+     <pre class="margin">
+noStroke();
+colorMode(HSB, 100);
+for (int i = 0; i &lt; 100; i++) {
+  for (int j = 0; j &lt; 100; j++) {
+    stroke(i, j, 100);
+    point(i, j);
+  }
+}
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/colorMode_2.png"/>
+     <pre class="margin">
+// If the color is defined here, it won't be 
+// affected by the colorMode() in setup(). 
+// Instead, just declare the variable here and 
+// assign the value after the colorMode() in setup()
+//color bg = color(180, 50, 50);  // No
+color bg;  // Yes, but assign it in setup()
+
+void setup() {
+  size(100, 100);
+  colorMode(HSB, 360, 100, 100);
+  bg = color(180, 50, 50);
+}
+
+void draw() {
+  background(bg);	
+}
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Changes the way Processing interprets color data. By default, the parameters for
+    <b>
+     fill()
+    </b>
+    ,
+    <b>
+     stroke()
+    </b>
+    ,
+    <b>
+     background()
+    </b>
+    , and
+    <b>
+     color()
+    </b>
+    are defined by values between 0 and 255 using the RGB color model. The
+    <b>
+     colorMode()
+    </b>
+    function is used to change the numerical range used for specifying colors and to switch color systems. For example, calling
+    <b>
+     colorMode(RGB, 1.0)
+    </b>
+    will specify that values are specified between 0 and 1. The limits for defining colors are altered by setting the parameters
+    <b>
+     max
+    </b>
+    ,
+    <b>
+     max1
+    </b>
+    ,
+    <b>
+     max2
+    </b>
+    ,
+    <b>
+     max3
+    </b>
+    , and
+    <b>
+     maxA
+    </b>
+    .
+    <br/>
+    <br/>
+    After changing the range of values for colors with code like
+    <b>
+     colorMode(HSB, 360, 100, 100)
+    </b>
+    , those ranges remain in use until they are explicitly changed again. For example, after running
+    <b>
+     colorMode(HSB, 360, 100, 100)
+    </b>
+    and then changing back to
+    <b>
+     colorMode(RGB)
+    </b>
+    , the range for R will be 0 to 360 and the range for G and B will be 0 to 100. To avoid this, be explicit about the ranges when changing the color mode. For instance, instead of
+    <b>
+     colorMode(RGB)
+    </b>
+    , write
+    <b>
+     colorMode(RGB, 255, 255, 255)
+    </b>
+    .
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>colorMode(mode)
+colorMode(mode, max)
+colorMode(mode, max1, max2, max3)
+colorMode(mode, max1, max2, max3, maxA)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       mode
+      </th>
+      <td>
+       int: Either RGB or HSB, corresponding to Red/Green/Blue and Hue/Saturation/Brightness
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       max
+      </th>
+      <td>
+       float: range for all color elements
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       max1
+      </th>
+      <td>
+       float: range for the red or hue depending on the current color mode
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       max2
+      </th>
+      <td>
+       float: range for the green or saturation depending on the current color mode
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       max3
+      </th>
+      <td>
+       float: range for the blue or brightness depending on the current color mode
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       maxA
+      </th>
+      <td>
+       float: range for the alpha
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="background_.html">
+     background()
+    </a>
+    <br/>
+    <a class="code" href="fill_.html">
+     fill()
+    </a>
+    <br/>
+    <a class="code" href="stroke_.html">
+     stroke()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

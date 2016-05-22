@@ -1,0 +1,104 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    randomSeed()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <pre>
+randomSeed(0);
+for (int i=0; i &lt; 100; i++) {
+  float r = random(0, 255);
+  stroke(r);
+  line(i, 0, i, 100);
+}
+
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Sets the seed value for
+    <b>
+     random()
+    </b>
+    . By default,
+    <b>
+     random()
+    </b>
+    produces different results each time the program is run. Set the
+    <b>
+     seed
+    </b>
+    parameter to a constant to return the same pseudo-random numbers each time the software is run.
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>randomSeed(seed)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       seed
+      </th>
+      <td>
+       int: seed value
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="random_.html">
+     random()
+    </a>
+    <br/>
+    <a class="code" href="noise_.html">
+     noise()
+    </a>
+    <br/>
+    <a class="code" href="noiseSeed_.html">
+     noiseSeed()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

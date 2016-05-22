@@ -1,0 +1,166 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    createFont()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <pre>
+PFont myFont;
+
+void setup() {
+  size(200, 200);
+  // Uncomment the following two lines to see the available fonts 
+  //String[] fontList = PFont.list();
+  //printArray(fontList);
+  myFont = createFont("Georgia", 32);
+  textFont(myFont);
+  textAlign(CENTER, CENTER);
+  text("!@#$%", width/2, height/2);
+}
+
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Dynamically converts a font to the format used by Processing from a .ttf or .otf file inside the sketch's "data" folder or a font that's installed elsewhere on the computer. If you want to use a font installed on your computer, use the
+    <b>
+     PFont.list()
+    </b>
+    method to first determine the names for the fonts recognized by the computer and are compatible with this function. Not all fonts can be used and some might work with one operating system and not others. When sharing a sketch with other people or posting it on the web, you may need to include a .ttf or .otf version of your font in the data directory of the sketch because other people might not have the font installed on their computer. Only fonts that can legally be distributed should be included with a sketch.
+    <br/>
+    <br/>
+    The
+    <b>
+     size
+    </b>
+    parameter states the font size you want to generate. The
+    <b>
+     smooth
+    </b>
+    parameter specifies if the font should be antialiased or not. The
+    <b>
+     charset
+    </b>
+    parameter is an array of chars that specifies the characters to generate.
+    <br/>
+    <br/>
+    This function allows Processing to work with the font natively in the default renderer, so the letters are defined by vector geometry and are rendered quickly. In the
+    <b>
+     P2D
+    </b>
+    and
+    <b>
+     P3D
+    </b>
+    renderers, the function sets the project to render the font as a series of small textures. For instance, when using the default renderer, the actual native version of the font will be employed by the sketch, improving drawing quality and performance. With the
+    <b>
+     P2D
+    </b>
+    and
+    <b>
+     P3D
+    </b>
+    renderers, the bitmapped version will be used to improve speed and appearance, but the results are poor when exporting if the sketch does not include the .otf or .ttf file, and the requested font is not available on the machine running the sketch.
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>createFont(name, size)
+createFont(name, size, smooth)
+createFont(name, size, smooth, charset)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       name
+      </th>
+      <td>
+       String: name of the font to load
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       size
+      </th>
+      <td>
+       float: point size of the font
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       smooth
+      </th>
+      <td>
+       boolean: true for an antialiased font, false for aliased
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       charset
+      </th>
+      <td>
+       char[]: array containing characters to be generated
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    PFont
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="PFont.html">
+     PFont
+    </a>
+    <br/>
+    <a class="code" href="textFont_.html">
+     textFont()
+    </a>
+    <br/>
+    <a class="code" href="text_.html">
+     text()
+    </a>
+    <br/>
+    <a class="code" href="loadFont_.html">
+     loadFont()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

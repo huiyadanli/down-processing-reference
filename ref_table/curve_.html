@@ -1,0 +1,198 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    curve()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <img alt="example pic" src="images/curve_.png"/>
+     <pre class="margin">
+noFill();
+stroke(255, 102, 0);
+curve(5, 26, 5, 26, 73, 24, 73, 61);
+stroke(0); 
+curve(5, 26, 73, 24, 73, 61, 15, 65); 
+stroke(255, 102, 0);
+curve(73, 24, 73, 61, 15, 65, 15, 65);
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Draws a curved line on the screen. The first and second parameters specify the beginning control point and the last two parameters specify the ending control point. The middle parameters specify the start and stop of the curve. Longer curves can be created by putting a series of
+    <b>
+     curve()
+    </b>
+    functions together or using
+    <b>
+     curveVertex()
+    </b>
+    . An additional function called
+    <b>
+     curveTightness()
+    </b>
+    provides control for the visual quality of the curve. The
+    <b>
+     curve()
+    </b>
+    function is an implementation of Catmull-Rom splines. Using the 3D version requires rendering with P3D (see the Environment reference for more information).
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>curve(x1, y1, x2, y2, x3, y3, x4, y4)
+curve(x1, y1, z1, x2, y2, z2, x3, y3, z3, x4, y4, z4)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       x1
+      </th>
+      <td>
+       float: coordinates for the beginning control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       y1
+      </th>
+      <td>
+       float: coordinates for the beginning control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       x2
+      </th>
+      <td>
+       float: coordinates for the first point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       y2
+      </th>
+      <td>
+       float: coordinates for the first point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       x3
+      </th>
+      <td>
+       float: coordinates for the second point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       y3
+      </th>
+      <td>
+       float: coordinates for the second point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       x4
+      </th>
+      <td>
+       float: coordinates for the ending control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       y4
+      </th>
+      <td>
+       float: coordinates for the ending control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       z1
+      </th>
+      <td>
+       float: coordinates for the beginning control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       z2
+      </th>
+      <td>
+       float: coordinates for the first point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       z3
+      </th>
+      <td>
+       float: coordinates for the second point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       z4
+      </th>
+      <td>
+       float: coordinates for the ending control point
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="curveVertex_.html">
+     curveVertex()
+    </a>
+    <br/>
+    <a class="code" href="curveTightness_.html">
+     curveTightness()
+    </a>
+    <br/>
+    <a class="code" href="bezier_.html">
+     bezier()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

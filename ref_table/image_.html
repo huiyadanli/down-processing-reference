@@ -1,0 +1,195 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    image()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <img alt="example pic" src="images/image_0.png"/>
+     <pre class="margin">
+PImage img;
+
+void setup() {
+  // Images must be in the "data" directory to load correctly
+  img = loadImage("laDefense.jpg");
+}
+
+void draw() {
+  image(img, 0, 0);
+}
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/image_1.png"/>
+     <pre class="margin">
+PImage img;
+
+void setup() {
+  // Images must be in the "data" directory to load correctly
+  img = loadImage("laDefense.jpg");
+}
+
+void draw() {
+  image(img, 0, 0);
+  image(img, 0, 0, width/2, height/2);
+}
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    The
+    <b>
+     image()
+    </b>
+    function draws an image to the display window. Images must be in the sketch's "data" directory to load correctly. Select "Add file..." from the "Sketch" menu to add the image to the data directory, or just drag the image file onto the sketch window. Processing currently works with GIF, JPEG, and PNG images.
+    <br/>
+    <br/>
+    The
+    <b>
+     img
+    </b>
+    parameter specifies the image to display and by default the
+    <b>
+     a
+    </b>
+    and
+    <b>
+     b
+    </b>
+    parameters define the location of its upper-left corner. The image is displayed at its original size unless the
+    <b>
+     c
+    </b>
+    and
+    <b>
+     d
+    </b>
+    parameters specify a different size. The
+    <b>
+     imageMode()
+    </b>
+    function can be used to change the way these parameters draw the image.
+    <br/>
+    <br/>
+    The color of an image may be modified with the
+    <b>
+     tint()
+    </b>
+    function. This function will maintain transparency for GIF and PNG images.
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>image(img, a, b)
+image(img, a, b, c, d)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       img
+      </th>
+      <td>
+       PImage: the image to display
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       a
+      </th>
+      <td>
+       float: x-coordinate of the image
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       b
+      </th>
+      <td>
+       float: y-coordinate of the image
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       c
+      </th>
+      <td>
+       float: width to display the image
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       d
+      </th>
+      <td>
+       float: height to display the image
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="loadImage_.html">
+     loadImage()
+    </a>
+    <br/>
+    <a class="code" href="PImage.html">
+     PImage
+    </a>
+    <br/>
+    <a class="code" href="imageMode_.html">
+     imageMode()
+    </a>
+    <br/>
+    <a class="code" href="tint_.html">
+     tint()
+    </a>
+    <br/>
+    <a class="code" href="background_.html">
+     background()
+    </a>
+    <br/>
+    <a class="code" href="alpha_.html">
+     alpha()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

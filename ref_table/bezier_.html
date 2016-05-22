@@ -1,0 +1,188 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    bezier()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <img alt="example pic" src="images/bezier_0.png"/>
+     <pre class="margin">
+noFill();
+stroke(255, 102, 0);
+line(85, 20, 10, 10);
+line(90, 90, 15, 80);
+stroke(0, 0, 0);
+bezier(85, 20, 10, 10, 90, 90, 15, 80);
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/bezier_1.png"/>
+     <pre class="margin">
+noFill();
+stroke(255, 102, 0);
+line(30, 20, 80, 5);
+line(80, 75, 30, 75);
+stroke(0, 0, 0);
+bezier(30, 20,  80, 5,  80, 75,  30, 75);
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Draws a Bezier curve on the screen. These curves are defined by a series of anchor and control points. The first two parameters specify the first anchor point and the last two parameters specify the other anchor point. The middle parameters specify the control points which define the shape of the curve. Bezier curves were developed by French engineer Pierre Bezier. Using the 3D version requires rendering with P3D (see the Environment reference for more information).
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>bezier(x1, y1, x2, y2, x3, y3, x4, y4)
+bezier(x1, y1, z1, x2, y2, z2, x3, y3, z3, x4, y4, z4)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       x1
+      </th>
+      <td>
+       float: coordinates for the first anchor point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       y1
+      </th>
+      <td>
+       float: coordinates for the first anchor point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       z1
+      </th>
+      <td>
+       float: coordinates for the first anchor point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       x2
+      </th>
+      <td>
+       float: coordinates for the first control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       y2
+      </th>
+      <td>
+       float: coordinates for the first control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       z2
+      </th>
+      <td>
+       float: coordinates for the first control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       x3
+      </th>
+      <td>
+       float: coordinates for the second control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       y3
+      </th>
+      <td>
+       float: coordinates for the second control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       z3
+      </th>
+      <td>
+       float: coordinates for the second control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       x4
+      </th>
+      <td>
+       float: coordinates for the second anchor point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       y4
+      </th>
+      <td>
+       float: coordinates for the second anchor point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       z4
+      </th>
+      <td>
+       float: coordinates for the second anchor point
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="bezierVertex_.html">
+     bezierVertex()
+    </a>
+    <br/>
+    <a class="code" href="curve_.html">
+     curve()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

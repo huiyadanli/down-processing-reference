@@ -1,0 +1,133 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    println()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <pre>
+String s = "The size is ";
+int w = 1920;
+int h = 1080;
+println(s);
+println(w, "x", h);
+
+// This program writes to the console:
+// The size is 
+// 1920 x 1080
+</pre>
+    </div>
+    <hr class="noshade" noshade="noshade" size="1">
+     <div class="example">
+      <pre>
+print("begin- ");
+float f = 0.3;
+int i = 1024;
+print("f is " + f + " and i is " + 1024);
+String s = " -end";
+println(s);
+
+// This program writes to the console:
+// "begin- f is 0.3 and i is 1024 -end"
+</pre>
+     </div>
+    </hr>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    The
+    <b>
+     println()
+    </b>
+    function writes to the console area, the black rectangle at the bottom of the Processing environment. This function is often helpful for looking at the data a program is producing. Each call to this function creates a new line of output. More than one parameter can be passed into the function by separating them with commas. Alternatively, individual elements can be separated with quotes ("") and joined with the addition operator (+).
+    <br/>
+    <br/>
+    Before Processing 2.1,
+    <b>
+     println()
+    </b>
+    was used to write array data to the console. Now, use
+    <b>
+     printArray()
+    </b>
+    to write array data to the console.
+    <br/>
+    <br/>
+    Note that the console is relatively slow. It works well for occasional messages, but does not support high-speed, real-time output (such as at 60 frames per second). It should also be noted, that a println() within a for loop can sometimes lock up the program, and cause the sketch to freeze.
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>println()
+println(what)
+println(variables)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       what
+      </th>
+      <td>
+       Object, String, float, char, boolean, or byte: data to print to console
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       variables
+      </th>
+      <td>
+       Object[]: list of data, separated by commas
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="print_.html">
+     print()
+    </a>
+    <br/>
+    <a class="code" href="printArray_.html">
+     printArray()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

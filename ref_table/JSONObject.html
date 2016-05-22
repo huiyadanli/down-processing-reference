@@ -1,0 +1,240 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    JSONObject
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Examples
+  </th>
+  <td>
+   <div class="example">
+    <pre>
+JSONObject json;
+
+void setup() {
+
+  json = new JSONObject();
+
+  json.setInt("id", 0);
+  json.setString("species", "Panthera leo");
+  json.setString("name", "Lion");
+
+  saveJSONObject(json, "data/new.json");
+}
+
+// Sketch saves the following to a file called "new.json":
+// {
+//   "id": 0,
+//   "species": "Panthera leo",
+//   "name": "Lion"
+// }
+</pre>
+   </div>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Description
+  </th>
+  <td>
+   A
+   <b>
+    JSONObject
+   </b>
+   stores JSON data with multiple name/value pairs.  Values can be numeric, Strings, booleans, other
+   <b>
+    JSONObject
+   </b>
+   s or
+   <b>
+    JSONArray
+   </b>
+   s, or null.
+   <b>
+    JSONObject
+   </b>
+   and
+   <b>
+    JSONArray
+   </b>
+   objects are quite similar and share most of the same methods; the primary difference is that the latter stores an array of JSON objects, while the former represents a single JSON object.
+   <br/>
+   <br/>
+   JSON can be generated from scratch, dynamically, or using data from an existing file.  JSON can also be output and saved to disk, as in the example above.
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Methods
+  </th>
+  <td>
+   <table border="0" cellpadding="0" cellspacing="0">
+    <tr class="">
+     <th scope="row">
+      <a href="JSONObject_getString_.html">
+       getString()
+      </a>
+     </th>
+     <td>
+      Gets the string value associated with a key
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="JSONObject_getInt_.html">
+       getInt()
+      </a>
+     </th>
+     <td>
+      Gets the int value associated with a key
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="JSONObject_getFloat_.html">
+       getFloat()
+      </a>
+     </th>
+     <td>
+      Gets the float value associated with a key
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="JSONObject_getBoolean_.html">
+       getBoolean()
+      </a>
+     </th>
+     <td>
+      Gets the boolean value associated with a key
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="JSONObject_getJSONArray_.html">
+       getJSONArray()
+      </a>
+     </th>
+     <td>
+      Gets the JSONArray value associated with a key
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="JSONObject_getJSONObject_.html">
+       getJSONObject()
+      </a>
+     </th>
+     <td>
+      Gets the JSONObject value associated with a key
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="JSONObject_isNull_.html">
+       isNull()
+      </a>
+     </th>
+     <td>
+      Determine if the value associated with the key is null or if there is 
+ no value.
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="JSONObject_setString_.html">
+       setString()
+      </a>
+     </th>
+     <td>
+      Put a key/String pair in the JSONObject
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="JSONObject_setInt_.html">
+       setInt()
+      </a>
+     </th>
+     <td>
+      Put a key/int pair in the JSONObject
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="JSONObject_setFloat_.html">
+       setFloat()
+      </a>
+     </th>
+     <td>
+      Put a key/float pair in the JSONObject
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="JSONObject_setBoolean_.html">
+       setBoolean()
+      </a>
+     </th>
+     <td>
+      Put a key/boolean pair in the JSONObject
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="JSONObject_setJSONObject_.html">
+       setJSONObject()
+      </a>
+     </th>
+     <td>
+      Sets the JSONObject value associated with a key
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="JSONObject_setJSONArray_.html">
+       setJSONArray()
+      </a>
+     </th>
+     <td>
+      Sets the JSONArray value associated with a key
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Related
+  </th>
+  <td>
+   <a class="code" href="JSONArray.html">
+    JSONArray
+   </a>
+   <br/>
+   <a class="code" href="loadJSONObject_.html">
+    loadJSONObject()
+   </a>
+   <br/>
+   <a class="code" href="loadJSONArray_.html">
+    loadJSONArray()
+   </a>
+   <br/>
+   <a class="code" href="saveJSONObject_.html">
+    saveJSONObject()
+   </a>
+   <br/>
+   <a class="code" href="saveJSONArray_.html">
+    saveJSONArray()
+   </a>
+   <br/>
+  </td>
+ </tr>
+</table>

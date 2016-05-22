@@ -1,0 +1,98 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    save()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <pre>
+line(20, 20, 80, 80);
+// Saves a TIFF file named "diagonal.tif"
+save("diagonal.tif");
+// Saves a TARGA file named "cross.tga"
+line(80, 20, 20, 80);
+save("cross.tga");
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Saves an image from the display window. Append a file extension to the name of the file, to indicate the file format to be used: either TIFF (.tif), TARGA (.tga), JPEG (.jpg), or PNG (.png). If no extension is included in the filename, the image will save in TIFF format and
+    <b>
+     .tif
+    </b>
+    will be added to the name. These files are saved to the sketch's folder, which may be opened by selecting "Show sketch folder" from the "Sketch" menu. Alternatively, the files can be saved to any location on the computer by using an absolute path (something that starts with / on Unix and Linux, or a drive letter on Windows).
+    <br/>
+    <br/>
+    All images saved from the main drawing window will be opaque. To save images without a background, use
+    <b>
+     createGraphics()
+    </b>
+    .
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>save(filename)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       filename
+      </th>
+      <td>
+       String: any sequence of letters and numbers
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="saveFrame_.html">
+     saveFrame()
+    </a>
+    <br/>
+    <a class="code" href="createGraphics_.html">
+     createGraphics()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

@@ -1,0 +1,113 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    shininess()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <img alt="example pic" src="images/shininess_.png"/>
+     <pre class="margin">
+size(100, 100, P3D); 
+background(0);
+noStroke();
+background(0); 
+fill(0, 51, 102); 
+ambientLight(102, 102, 102);
+lightSpecular(204, 204, 204);
+directionalLight(102, 102, 102, 0, 0, -1);
+specular(255, 255, 255);
+translate(30, 50, 0);
+shininess(1.0);
+sphere(20);  // Left sphere
+translate(40, 0, 0); 
+shininess(5.0); 
+sphere(20);  // Right sphere
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Sets the amount of gloss in the surface of shapes. Used in combination with
+    <b>
+     ambient()
+    </b>
+    ,
+    <b>
+     specular()
+    </b>
+    , and
+    <b>
+     emissive()
+    </b>
+    in setting the material properties of shapes.
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>shininess(shine)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       shine
+      </th>
+      <td>
+       float: degree of shininess
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="emissive_.html">
+     emissive()
+    </a>
+    <br/>
+    <a class="code" href="ambient_.html">
+     ambient()
+    </a>
+    <br/>
+    <a class="code" href="specular_.html">
+     specular()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

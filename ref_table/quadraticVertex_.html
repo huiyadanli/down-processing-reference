@@ -1,0 +1,178 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    quadraticVertex()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <img alt="example pic" src="images/quadraticVertex_0.png"/>
+     <pre class="margin">
+noFill();
+strokeWeight(4);
+beginShape();
+vertex(20, 20);
+quadraticVertex(80, 20, 50, 50);
+endShape();
+</pre>
+    </div>
+    <div class="example">
+     <img alt="example pic" src="images/quadraticVertex_1.png"/>
+     <pre class="margin">
+noFill();
+strokeWeight(4);
+beginShape();
+vertex(20, 20);
+quadraticVertex(80, 20, 50, 50);
+quadraticVertex(20, 80, 80, 80);
+vertex(80, 60);
+endShape();
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Specifies vertex coordinates for quadratic Bezier curves. Each call to
+    <b>
+     quadraticVertex()
+    </b>
+    defines the position of one control points and one anchor point of a Bezier curve, adding a new segment to a line or shape. The first time
+    <b>
+     quadraticVertex()
+    </b>
+    is used within a
+    <b>
+     beginShape()
+    </b>
+    call, it must be prefaced with a call to
+    <b>
+     vertex()
+    </b>
+    to set the first anchor point. This function must be used between
+    <b>
+     beginShape()
+    </b>
+    and
+    <b>
+     endShape()
+    </b>
+    and only when there is no MODE parameter specified to
+    <b>
+     beginShape()
+    </b>
+    . Using the 3D version requires rendering with P3D (see the Environment reference for more information).
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>quadraticVertex(cx, cy, x3, y3)
+quadraticVertex(cx, cy, cz, x3, y3, z3)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       cx
+      </th>
+      <td>
+       float: the x-coordinate of the control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       cy
+      </th>
+      <td>
+       float: the y-coordinate of the control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       x3
+      </th>
+      <td>
+       float: the x-coordinate of the anchor point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       y3
+      </th>
+      <td>
+       float: the y-coordinate of the anchor point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       cz
+      </th>
+      <td>
+       float: the z-coordinate of the control point
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       z3
+      </th>
+      <td>
+       float: the z-coordinate of the anchor point
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="curveVertex_.html">
+     curveVertex()
+    </a>
+    <br/>
+    <a class="code" href="vertex_.html">
+     vertex()
+    </a>
+    <br/>
+    <a class="code" href="bezierVertex_.html">
+     bezierVertex()
+    </a>
+    <br/>
+    <a class="code" href="bezier_.html">
+     bezier()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

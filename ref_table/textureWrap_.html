@@ -1,0 +1,106 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    textureWrap()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <pre>
+PImage img;
+
+void setup() {
+  size(300, 300, P2D);
+  img = loadImage("berlin-1.jpg");
+  textureMode(NORMAL);
+}
+
+void draw() {
+  background(0);
+  translate(width/2, height/2);
+  rotate(map(mouseX, 0, width, -PI, PI));
+  if (mousePressed) {
+    textureWrap(REPEAT); 
+  } else {
+    textureWrap(CLAMP);
+  }
+  beginShape();
+  texture(img);
+  vertex(-100, -100, 0, 0);
+  vertex(100, -100, 2, 0);
+  vertex(100, 100, 2, 2);
+  vertex(-100, 100, 0, 2);
+  endShape();
+}
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Defines if textures repeat or draw once within a texture map. The two parameters are CLAMP (the default behavior) and REPEAT. This function only works with the P2D and P3D renderers.
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>textureWrap(wrap)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       wrap
+      </th>
+      <td>
+       int: Either CLAMP (default) or REPEAT
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="texture_.html">
+     texture()
+    </a>
+    <br/>
+    <a class="code" href="textureMode_.html">
+     textureMode()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

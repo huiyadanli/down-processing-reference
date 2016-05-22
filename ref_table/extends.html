@@ -1,0 +1,94 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    extends
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <pre>
+DrawDot dd1 = new DrawDot(50, 80);
+
+void setup() { 
+  size(200, 200);
+} 
+ 
+void draw() {
+  dd1.display();
+} 
+ 
+class Dot { 
+  int xpos, ypos;
+} 
+
+class DrawDot extends Dot {
+  DrawDot(int x, int y) {
+    xpos = x;
+    ypos = y;
+  }
+  void display() {
+    ellipse(xpos, ypos, 200, 200);
+  }
+}
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Allows a new class to
+    <em>
+     inherit
+    </em>
+    the methods and data fields (variables and constants) from an existing class. In code, state the name of the new class, followed by the keyword
+    <b>
+     extends
+    </b>
+    and the name of the
+    <i>
+     base class
+    </i>
+    . The concept of inheritance is one of the fundamental principles of object oriented programming.
+    <br/>
+    <br/>
+    Note that in Java, and therefore also Processing, you cannot extend a class more than once. Instead, see
+    <b>
+     implements
+    </b>
+    .
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="class.html">
+     class
+    </a>
+    <br/>
+    <a class="code" href="super.html">
+     super
+    </a>
+    <br/>
+    <a class="code" href="implements.html">
+     implements
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

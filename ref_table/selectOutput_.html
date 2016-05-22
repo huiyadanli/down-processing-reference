@@ -1,0 +1,89 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    selectOutput()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <pre>
+void setup() {
+  selectOutput("Select a file to write to:", "fileSelected");
+}
+
+void fileSelected(File selection) {
+  if (selection == null) {
+    println("Window was closed or the user hit cancel.");
+  } else {
+    println("User selected " + selection.getAbsolutePath());
+  }
+}
+</pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Opens a platform-specific file chooser dialog to select a file for output. After the selection is made, the selected File will be passed to the 'callback' function. If the dialog is closed or canceled, null will be sent to the function, so that the program is not waiting for additional input. The callback is necessary because of how threading works.
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>selectOutput(prompt, callback)
+selectOutput(prompt, callback, file)
+selectOutput(prompt, callback, file, callbackObject)
+selectOutput(prompt, callbackMethod, file, callbackObject, parent)
+selectOutput(prompt, callbackMethod, file, callbackObject, parent, sketch)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       prompt
+      </th>
+      <td>
+       String: message to the user
+      </td>
+     </tr>
+     <tr class="">
+      <th class="code" scope="row">
+       callback
+      </th>
+      <td>
+       String: name of the method to be called when the selection is made
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+ </tr>
+</table>

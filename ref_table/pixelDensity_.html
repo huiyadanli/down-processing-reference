@@ -1,0 +1,145 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    pixelDensity()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <pre>
+size(100, 100);
+pixelDensity(2);
+noStroke();
+background(0);
+ellipse(30, 48, 36, 36);
+ellipse(70, 48, 36, 36);
+</pre>
+    </div>
+    <hr class="noshade" noshade="noshade" size="1">
+     <div class="example">
+      <pre>
+void setup() {
+  size(100, 100);
+  pixelDensity(2);
+  noStroke();
+}
+
+void draw() {
+  background(0);
+  ellipse(30, 48, 36, 36);
+  ellipse(70, 48, 36, 36);
+}
+</pre>
+     </div>
+     <hr class="noshade" noshade="noshade" size="1">
+      <div class="example">
+       <pre>
+void setup() {
+  size(100, 100);
+  // Pulling the display's density dynamically
+  pixelDensity(displayDensity());
+  noStroke();
+}
+
+void draw() {
+  background(0);
+  ellipse(30, 48, 36, 36);
+  ellipse(70, 48, 36, 36);
+}
+</pre>
+      </div>
+     </hr>
+    </hr>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    This function is new with Processing 3.0. It makes it possible for Processing to render using all of the pixels on high resolutions screens like Apple Retina displays and Windows High-DPI displays. This function can only be run once within a program and it must be used right after
+    <b>
+     size()
+    </b>
+    in a program without a
+    <b>
+     setup()
+    </b>
+    and used within
+    <b>
+     setup()
+    </b>
+    when a program has one.  The
+    <b>
+     pixelDensity()
+    </b>
+    should only be used with hardcoded numbers (in almost all cases this number will be 2) or in combination with
+    <b>
+     displayDensity()
+    </b>
+    as in the third example above.
+
+To use variables as the arguments to
+    <b>
+     pixelDensity()
+    </b>
+    function, place the
+    <b>
+     pixelDensity()
+    </b>
+    function within the
+    <b>
+     settings()
+    </b>
+    function. There is more information about this on the
+    <b>
+     settings()
+    </b>
+    reference page.
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>pixelDensity(density)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       density
+      </th>
+      <td>
+       int: 1 or 2
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    void
+   </td>
+  </tr>
+ </tr>
+</table>

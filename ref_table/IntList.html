@@ -1,0 +1,280 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    IntList
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Examples
+  </th>
+  <td>
+   <div class="example">
+    <pre>
+IntList inventory;
+
+void setup() {
+  size(200, 200);
+  inventory = new IntList();
+  inventory.append(84);
+  inventory.append(15);
+  inventory.append(102);
+  println(inventory);
+  noLoop();
+  fill(0);
+  textAlign(CENTER);
+}
+
+void draw() {
+  int nums = inventory.get(2);
+  text(nums, width/2, height/2);
+}
+
+</pre>
+   </div>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Description
+  </th>
+  <td>
+   Helper class for a list of ints. Lists are designed to have some of the 
+features of ArrayLists, but to maintain the simplicity and efficiency of
+working with arrays.
+   <br/>
+   <br/>
+   Functions like sort() and shuffle() always act on the list itself. To get 
+a sorted copy, use list.copy().sort().
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Methods
+  </th>
+  <td>
+   <table border="0" cellpadding="0" cellspacing="0">
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_size_.html">
+       size()
+      </a>
+     </th>
+     <td>
+      Get the length of the list
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_clear_.html">
+       clear()
+      </a>
+     </th>
+     <td>
+      Remove all entries from the list
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_get_.html">
+       get()
+      </a>
+     </th>
+     <td>
+      Get an entry at a particular index
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_set_.html">
+       set()
+      </a>
+     </th>
+     <td>
+      Set the entry at a particular index
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_remove_.html">
+       remove()
+      </a>
+     </th>
+     <td>
+      Remove an element from the specified index
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_append_.html">
+       append()
+      </a>
+     </th>
+     <td>
+      Add a new entry to the list
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_hasValue_.html">
+       hasValue()
+      </a>
+     </th>
+     <td>
+      Check if a number is a part of the list
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_increment_.html">
+       increment()
+      </a>
+     </th>
+     <td>
+      Add one to a value
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_add_.html">
+       add()
+      </a>
+     </th>
+     <td>
+      Add to a value
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_sub_.html">
+       sub()
+      </a>
+     </th>
+     <td>
+      Subtract from a value
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_mult_.html">
+       mult()
+      </a>
+     </th>
+     <td>
+      Multiply a value
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_div_.html">
+       div()
+      </a>
+     </th>
+     <td>
+      Divide a value
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_min_.html">
+       min()
+      </a>
+     </th>
+     <td>
+      Return the smallest value
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_max_.html">
+       max()
+      </a>
+     </th>
+     <td>
+      Return the largest value
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_sort_.html">
+       sort()
+      </a>
+     </th>
+     <td>
+      Sorts the array, lowest to highest
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_sortReverse_.html">
+       sortReverse()
+      </a>
+     </th>
+     <td>
+      Reverse sort, orders values from highest to lowest
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_reverse_.html">
+       reverse()
+      </a>
+     </th>
+     <td>
+      Reverse the order of the list elements
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_shuffle_.html">
+       shuffle()
+      </a>
+     </th>
+     <td>
+      Randomize the order of the list elements
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="IntList_array_.html">
+       array()
+      </a>
+     </th>
+     <td>
+      Create a new array with a copy of all the values
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Constructor
+  </th>
+  <td>
+   <pre>IntList()
+IntList(items)
+</pre>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Related
+  </th>
+  <td>
+   <a class="code" href="FloatList.html">
+    FloatList
+   </a>
+   <br/>
+   <a class="code" href="StringList.html">
+    StringList
+   </a>
+   <br/>
+  </td>
+ </tr>
+</table>

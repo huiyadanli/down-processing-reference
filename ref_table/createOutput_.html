@@ -1,0 +1,101 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    createOutput()
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <tr class="">
+   <th scope="row">
+    Examples
+   </th>
+   <td>
+    <div class="example">
+     <pre></pre>
+    </div>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Description
+   </th>
+   <td>
+    Similar to
+    <b>
+     createInput()
+    </b>
+    , this creates a Java
+    <b>
+     OutputStream
+    </b>
+    for a given filename or path. The file will be created in the sketch folder, or in the same folder as an exported application.
+    <br/>
+    <br/>
+    If the path does not exist, intermediate folders will be created. If an exception occurs, it will be printed to the console, and
+    <b>
+     null
+    </b>
+    will be returned.
+    <br/>
+    <br/>
+    This function is a convenience over the Java approach that requires you to 1) create a FileOutputStream object, 2) determine the exact file location, and 3) handle exceptions. Exceptions are handled internally by the function, which is more appropriate for "sketch" projects.
+    <br/>
+    <br/>
+    If the output filename ends with
+    <b>
+     .gz
+    </b>
+    , the output will be automatically GZIP compressed as it is written.
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Syntax
+   </th>
+   <td>
+    <pre>createOutput(filename)</pre>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Parameters
+   </th>
+   <td>
+    <table border="0" cellpadding="0" cellspacing="0">
+     <tr class="">
+      <th class="code" scope="row">
+       filename
+      </th>
+      <td>
+       String: name of the file to open
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Returns
+   </th>
+   <td class="code">
+    OutputStream
+   </td>
+  </tr>
+  <tr class="">
+   <th scope="row">
+    Related
+   </th>
+   <td>
+    <a class="code" href="createInput_.html">
+     createInput()
+    </a>
+    <br/>
+   </td>
+  </tr>
+ </tr>
+</table>

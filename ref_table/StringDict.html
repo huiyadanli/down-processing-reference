@@ -1,0 +1,224 @@
+<table border="0" cellpadding="0" cellspacing="0" class="ref-item">
+ <tr class="name-row">
+  <th scope="row">
+   Name
+  </th>
+  <td>
+   <h3>
+    StringDict
+   </h3>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Examples
+  </th>
+  <td>
+   <div class="example">
+    <pre>
+StringDict inventory;
+
+void setup() {
+  size(200, 200);
+  inventory = new StringDict();
+  inventory.set("coffee","black");
+  inventory.set("flour","white");
+  inventory.set("tea","green");
+  println(inventory);
+  noLoop();
+  fill(0);
+  textAlign(CENTER);
+}
+
+void draw() {
+  String s = inventory.get("tea");
+  text(s, width/2, height/2);
+}
+
+</pre>
+   </div>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Description
+  </th>
+  <td>
+   A simple class to use a String as a lookup for an String value. String "keys" are associated with String values.
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Methods
+  </th>
+  <td>
+   <table border="0" cellpadding="0" cellspacing="0">
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_size_.html">
+       size()
+      </a>
+     </th>
+     <td>
+      Returns the number of key/value pairs
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_clear_.html">
+       clear()
+      </a>
+     </th>
+     <td>
+      Remove all entries
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_keys_.html">
+       keys()
+      </a>
+     </th>
+     <td>
+      Return the internal array being used to store the keys
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_keyArray_.html">
+       keyArray()
+      </a>
+     </th>
+     <td>
+      Return a copy of the internal keys array
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_values_.html">
+       values()
+      </a>
+     </th>
+     <td>
+      Return the internal array being used to store the values
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_valueArray_.html">
+       valueArray()
+      </a>
+     </th>
+     <td>
+      Create a new array and copy each of the values into it
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_get_.html">
+       get()
+      </a>
+     </th>
+     <td>
+      Return a value for the specified key
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_set_.html">
+       set()
+      </a>
+     </th>
+     <td>
+      Create a new key/value pair or change the value of one
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_hasKey_.html">
+       hasKey()
+      </a>
+     </th>
+     <td>
+      Check if a key is a part of the data structure
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_remove_.html">
+       remove()
+      </a>
+     </th>
+     <td>
+      Remove a key/value pair
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_sortKeys_.html">
+       sortKeys()
+      </a>
+     </th>
+     <td>
+      Sort the keys alphabetically
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_sortKeysReverse_.html">
+       sortKeysReverse()
+      </a>
+     </th>
+     <td>
+      Sort the keys alphabetially in reverse
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_sortValues_.html">
+       sortValues()
+      </a>
+     </th>
+     <td>
+      Sort by values in ascending order
+     </td>
+    </tr>
+    <tr class="">
+     <th scope="row">
+      <a href="StringDict_sortValuesReverse_.html">
+       sortValuesReverse()
+      </a>
+     </th>
+     <td>
+      Sort by values in descending order
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Constructor
+  </th>
+  <td>
+   <pre>StringDict()
+StringDict(pairs)
+</pre>
+  </td>
+ </tr>
+ <tr class="">
+  <th scope="row">
+   Related
+  </th>
+  <td>
+   <a class="code" href="IntDict.html">
+    IntDict
+   </a>
+   <br/>
+   <a class="code" href="FloatDict.html">
+    FloatDict
+   </a>
+   <br/>
+  </td>
+ </tr>
+</table>
