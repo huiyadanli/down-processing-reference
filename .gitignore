@@ -1,3 +1,10 @@
+# Some file and folder
+ref/
+ref_table/
+template/
+ref-link.txt
+
+
 # Pycharm
 .idea/
 
